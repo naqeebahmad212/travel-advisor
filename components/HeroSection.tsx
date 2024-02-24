@@ -39,7 +39,7 @@ const HeroSection = () => {
             <div className=" w-[80%] p-3 flex gap-5 flex-col lg:flex-row justify-between items-center">
               <div className="boxes flex gap-2 lg:gap-5">
                 <div className="card box bg-[#64467e]  shadow-lg h-[100px] w-[110px]">
-                  <div className="text-center text-white p-1 bg-blue-950 w-[80%] mx-auto m-2 rounded-lg">
+                  <div className="text-center text-white p-1 bg-blue-950 w-[80%] mx-auto m-2 rounded-lg flex items-center gap-1">
                     <CheckCircleIcon className="text-[20px]" /> 78345+
                   </div>
                   <span className="text-center px-2 font-extralight text-sm  text-white">
@@ -47,7 +47,7 @@ const HeroSection = () => {
                   </span>
                 </div>
                 <div className="card bg-[#64467e] h-[100px] w-[110px]">
-                  <div className="text-center text-white p-1 bg-blue-950 w-[80%] mx-auto m-2 rounded-lg">
+                  <div className="text-center text-white p-1 bg-blue-950 w-[80%] mx-auto m-2 rounded-lg flex items-center gap-1 justify-center">
                     <HolidayVillageIcon className="text-[20px]" /> 503+
                   </div>
                   <span className="text-center px-2 font-extralight text-sm text-white">
@@ -55,7 +55,7 @@ const HeroSection = () => {
                   </span>
                 </div>
                 <div className="card bg-[#64467e] h-[100px] w-[110px]">
-                  <div className="text-center text-white p-1 bg-blue-950 w-[80%] mx-auto m-2 rounded-lg">
+                  <div className="text-center text-white p-1 bg-blue-950 w-[80%] mx-auto m-2 rounded-lg flex items-center gap-1 justify-center">
                     <BusAlertIcon className="text-[20px]" /> 0
                   </div>
                   <span className="text-center font-extralight text-sm text-white">
