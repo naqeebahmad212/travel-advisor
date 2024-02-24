@@ -22,7 +22,7 @@ const TopPackages = () => {
           <div
             className="h-[320px] rounded-xl overflow-hidden w-full sm:w-[50%] mx-auto  md:w-[24%] shadow-lg popular-cards bg-cover object-cover bg-center bg-slate-200 md:absolute top-0 left-0 mb-2 hover:scale-[1.03]  transition-all duration-500 ease-linear cursor-pointer hover:z-[99999]"
             style={{
-              backgroundImage: `url("/images/aron-visuals-6sMGdkj3Ywg-unsplash.jpg")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1535632788826-78ca9d09d2e7?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
             }}
           >
             <div className="w-full h-full flex items-end">
@@ -43,7 +43,7 @@ const TopPackages = () => {
           <div
             className="h-[320px] rounded-xl overflow-hidden w-full sm:w-[50%] mx-auto  md:w-[24%] shadow-lg popular-cards bg-cover object-cover bg-center bg-slate-400 md:absolute left-[18%] top-10 mb-2 hover:scale-[1.03]  transition-all duration-500 ease-linear cursor-pointer hover:z-[99999]"
             style={{
-              backgroundImage: `url("/images/aron-visuals-6sMGdkj3Ywg-unsplash.jpg")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1535632788826-78ca9d09d2e7?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
             }}
           >
             <div className="w-full h-full flex items-end">
@@ -64,7 +64,7 @@ const TopPackages = () => {
           <div
             className="h-[320px] rounded-xl overflow-hidden mx-auto w-full sm:w-[50%]  md:w-[24%] shadow-lg popular-cards bg-cover object-cover bg-center bg-slate-600 md:absolute z-[9999] left-[37%] top-[70px] mb-2 hover:scale-[1.03]  transition-all duration-500 ease-linear cursor-pointer "
             style={{
-              backgroundImage: `url("/images/aron-visuals-6sMGdkj3Ywg-unsplash.jpg")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1535632788826-78ca9d09d2e7?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
             }}
           >
             <div className="w-full h-full flex items-end">
@@ -85,7 +85,7 @@ const TopPackages = () => {
           <div
             className="h-[320px] rounded-xl overflow-hidden mx-auto  w-full sm:w-[50%]  md:w-[24%] shadow-lg popular-cards bg-cover object-cover bg-center bg-slate-800 md:absolute right-[18%] z-[999] top-10 mb-2 hover:scale-[1.03]  transition-all duration-500 ease-linear cursor-pointer hover:z-[99999]"
             style={{
-              backgroundImage: `url("/images/aron-visuals-6sMGdkj3Ywg-unsplash.jpg")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1535632788826-78ca9d09d2e7?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
             }}
           >
             <div className="w-full h-full flex items-end">
@@ -106,7 +106,7 @@ const TopPackages = () => {
           <div
             className="h-[320px] rounded-xl overflow-hidden mx-auto  w-full sm:w-[50%] md:w-[24%] shadow-lg popular-cards bg-cover object-cover bg-center bg-slate-500 md:absolute top-0 right-0 mb-2 hover:scale-[1.03]  transition-all duration-500 ease-linear cursor-pointer hover:z-[99999]"
             style={{
-              backgroundImage: `url("/images/aron-visuals-6sMGdkj3Ywg-unsplash.jpg")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1535632788826-78ca9d09d2e7?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
             }}
           >
             <div className="w-full h-full flex items-end">

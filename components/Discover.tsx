@@ -1,10 +1,14 @@
 import React from "react";
+import discover from "@/images/discover.png";
+import personDiscover from "@/images/chrome_OPTmRBDa4n.gif";
 
 const Discover = () => {
   return (
     <div
       className="w-full h-[100%] bg-cover object-cover bg-center"
-      style={{ backgroundImage: `url("/images/discover.png")` }}
+      style={{
+        backgroundImage: `url(${discover.src})`,
+      }}
     >
       <div className="w-full">
         <h2 className="pt-10 mx-auto text-center text-red-400 w-full">
@@ -18,7 +22,7 @@ const Discover = () => {
 
       <div
         className="w-full mx-auto mt-[170px] min-h-[60%] text-white flex items-center justify-center bg-center object-cover overflow-hidden bg-cover"
-        style={{ backgroundImage: `url("/images/chrome_OPTmRBDa4n.gif")` }}
+        style={{ backgroundImage: `url(${personDiscover.src})` }}
       >
         <button className="btn btn-success text-white mt-10">Book Now</button>
       </div>

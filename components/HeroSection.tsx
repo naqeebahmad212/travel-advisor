@@ -18,7 +18,7 @@ const HeroSection = () => {
           id="slide1"
           className="relative w-full h-[100%] bg-black transition-all duration-500"
           style={{
-            backgroundImage: `url("/images/aron-visuals-6sMGdkj3Ywg-unsplash.jpg")`,
+            backgroundImage: `url("https://images.unsplash.com/photo-1535632788826-78ca9d09d2e7?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
           }}
         >
           <div className="hero-contents relative flex flex-col gap-9 items-center overlay h-[100%] w-[100%]  bg-black bg-opacity-30  justify-center">
@@ -69,7 +69,7 @@ const HeroSection = () => {
                   <div
                     className="carousel-item w-full bg-cover object-cover bg-center cursor-pointer"
                     style={{
-                      backgroundImage: `url("/images/daiwei-lu-tU7sNs6tmt8-unsplash.jpg")`,
+                      backgroundImage: `url("https://images.unsplash.com/photo-1535632788826-78ca9d09d2e7?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
                     }}
                   >
                     <div className="w-full h-[100%] bg-black bg-opacity-40 flex justify-center items-center">
@@ -82,7 +82,7 @@ const HeroSection = () => {
                   <div
                     className="carousel-item w-full  bg-cover object-cover bg-center cursor-pointer"
                     style={{
-                      backgroundImage: `url("/images/bravingbird-FaM4HDuHk_o-unsplash-min (1).jpg")`,
+                      backgroundImage: `url("https://images.unsplash.com/photo-1705651250587-5e2981d23493?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
                     }}
                   >
                     <div className="w-full h-[100%] bg-black bg-opacity-40 flex justify-center items-center">
@@ -96,7 +96,7 @@ const HeroSection = () => {
                   <div
                     className="carousel-item w-full  bg-cover object-cover bg-center cursor-pointer"
                     style={{
-                      backgroundImage: `url("/images/fabien-bellanger-WyfXOHgI49s-unsplash-min.jpg")`,
+                      backgroundImage: `url("https://images.unsplash.com/photo-1483666852720-824ca74c50ca?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
                     }}
                   >
                     <div className="w-full h-[100%] bg-black bg-opacity-40 flex justify-center items-center">
