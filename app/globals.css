@@ -2,32 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.carousel-contaner::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.nav {
+  backdrop-filter: blur(5px);
+}
+
+@media screen and (min-width: 700px) {
+  #slide1 {
+    animation: scaleAnim 40s linear infinite;
+    background-size: 100%;
+    /* background-position: bottom !important; */
+  }
+  @keyframes scaleAnim {
+    0% {
+      /* transform: scale(1); */
+      background-position: center;
+    }
+    50% {
+      background-position: top;
+    }
+
+    100% {
+      /* transform: back; */
+      background-position: center;
+    }
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.box {
+  border-style: groove;
+  /* background-color: rgb(7, 17, 43); */
+}
+.clip-design {
+  clip-path: polygon(
+    198px 45px,
+    274px 49px,
+    339px 23px,
+    354px 23px,
+    365px 23px,
+    462px 53px,
+    485px 49px,
+    529px 72px,
+    590px 50px,
+    672px 65px,
+    737px 53px,
+    779px 55px,
+    868px 49px,
+    885px 55px,
+    952px 41px,
+    1052px 55px,
+    1079px 55px,
+    1164px 72px,
+    1263px 55px,
+    1383px 41px,
+    1421px 28px,
+    1455px 23px,
+    1491px 23px,
+    1538px 15px,
+    1573px 4px,
+    1608px 0px,
+    1670px 23px,
+    1732px 49px,
+    1786px 65px,
+    1872px 55px,
+    1924px 82px,
+    2000px 100px,
+    0px 100px,
+    129px 72px
+  );
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.popular {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    84% 90%,
+    75% 100%,
+    51% 93%,
+    34% 100%,
+    30% 91%,
+    13% 100%,
+    1% 96%
+  );
 }
