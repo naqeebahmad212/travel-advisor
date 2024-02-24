@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
 
       <section>
-        <div className="min-h-screen w-full bg-[#162237] relative">
+        <div className="h-[70vh] md:min-h-screen w-full bg-[#162237] relative">
           <div className="h-[100PX] w-full bg-[#162237] absolute -top-[80px] clip-design"></div>
           <div className="content-popular w-[80%] mx-auto p-5">
             <h2 className="text-purple-400">Popularly</h2>
