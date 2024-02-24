@@ -14,7 +14,7 @@ const Review = () => {
         className="rev w-[50%] text-center mx-auto py-3 bg-cover object-cover bg-center"
         style={{ backgroundImage: `url("/images/qoutes.png")` }}
       >
-        <Rating />
+        <Rating value={4} />
         <p className="text-center px-10 text-sm text-white">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           non sint mollitia nihil placeat, rem a, ratione doloremque harum rerum

@@ -31,7 +31,7 @@ export default function Home() {
         <TopPackages />
       </section>
 
-      <section className="review-section bg-[#162237] py-4">
+      <section className="review-section bg-[#162237] py-[50px] lg:py-[150px]">
         <Review />
       </section>
       {/* <div className="h-screen w-full bg-slate-400"></div> */}
