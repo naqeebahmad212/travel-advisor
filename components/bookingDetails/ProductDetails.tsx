@@ -4,7 +4,7 @@ const ProductDetails = () => {
   return (
     <div className="flex gap-[30px] h-full justify-center">
       <div className="border-r border-gray-400 pr-3 my-auto">
-        <h1 className="text-lg mb-5 text-white font-bold">
+        <h1 className="lg:text-lg mb-5 text-white font-bold">
           {" "}
           Check Product Details
         </h1>
