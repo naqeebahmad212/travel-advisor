@@ -3,9 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState("");
+  const pathname = usePathname();
 
   const menuSheet = useRef<HTMLDivElement>(null);
   const closeMenu = useRef<HTMLDivElement>(null);
@@ -38,9 +40,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-transparent ">
+    <div className="bg-transparent">
       <header className={"w-[100%] z-[99999]"}>
-        <div className=" nav z-[99999] w-full lg:w-[70%] p-3 fixed top-0 lg:left-[15%] bg-purple-200 bg-opacity-25 lg:rounded-b-2xl mx-auto flex justify-around px-1">
+        <div
+          className={` nav z-[99999] w-full lg:w-[70%] p-3 fixed top-0 lg:left-[15%]  bg-gray-300 bg-opacity-25  lg:rounded-b-2xl mx-auto flex justify-around px-1`}
+        >
           <div className="flex items-center gap-3 z-[999]  w-[100%] lg:w-[auto] justify-start">
             <span className="block lg:hidden" onClick={menuBtnHandler}>
               <MenuIcon />
@@ -84,10 +88,15 @@ const Navbar = () => {
               Discover
             </li>
             <li className="text-gray-200 font-light cursor-pointer hover:text-white">
-              Booking
+              <Link href={"/book"}>Booking</Link>
             </li>
             <li className="text-gray-200 font-light cursor-pointer hover:text-white">
               Reviews
+            </li>
+            <li className="text-gray-200 font-light cursor-pointer hover:text-white">
+              <button className="bg-green-400 p-2 rounded-3xl hover:scale-[1.02] transition-all duration-150">
+                Join Now
+              </button>
             </li>
           </ul>
         </div>
