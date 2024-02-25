@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Cancel, Close, X } from "@mui/icons-material";
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState("");
@@ -20,10 +21,6 @@ const Navbar = () => {
     closeMenu.current?.classList.remove("hidden");
     menuSheet.current?.classList.add("translate-x-[500px]");
     menuSheet.current?.classList.remove("translate-x-[-500px]");
-    siteTitle.current?.classList.remove("text-white");
-    siteTitle.current?.classList.add("text-black");
-    siteName.current?.classList.add("text-black");
-    siteName.current?.classList.remove("text-white");
 
     // menuSheet.current.classList.add('left-0')
   };
@@ -33,10 +30,6 @@ const Navbar = () => {
 
     menuSheet.current?.classList.remove("translate-x-[500px]");
     menuSheet.current?.classList.add("translate-x-[-500px]");
-    siteTitle.current?.classList.add("text-white");
-    siteTitle.current?.classList.remove("text-black");
-    siteName.current?.classList.remove("text-black");
-    siteName.current?.classList.add("text-white");
   };
 
   return (
@@ -47,14 +40,18 @@ const Navbar = () => {
         >
           <div className="flex items-center gap-3 z-[999]  w-[100%] lg:w-[auto] justify-start">
             <span className="block lg:hidden" onClick={menuBtnHandler}>
-              <MenuIcon />
+              <MenuIcon className="text-white" />
             </span>
 
             <div
               ref={menuSheet}
-              className="fixed items-baseline z-[9999] top-0 -left-[500px]  h-screen  w-[300px] bg-white transition duration-300 ease-in"
+              className=" nav fixed items-baseline z-[9999] top-0 -left-[500px]  h-screen  w-[300px]  transition duration-300 ease-in  bg-[#162237]  "
             >
-              <ul className="flex absolute w-full top-24 flex-col justify-center p-10">
+              <Close
+                onClick={hideMenuHandler}
+                className="absolute top-3 right-5 text-white"
+              />
+              <ul className="flex absolute text-white w-full top-24 flex-col justify-center p-10">
                 <li className="py-2 border-b w-full pl-3 hover:bg-gray-100 cursor-pointer hover:text-blue-500">
                   Discover
                 </li>
@@ -84,21 +81,24 @@ const Navbar = () => {
             </Link>
           </div>
           <ul className="hidden lg:flex px-3 gap-6 items-center text-primary font-semibold ">
-            <li className="text-gray-200 font-light cursor-pointer hover:text-white">
+            <li className="text-gray-200 font-light cursor-pointer hover:text-white hover:scale-[1.04] transition-all duration-150">
               Discover
             </li>
-            <li className="text-gray-200 font-light cursor-pointer hover:text-white">
+            <li className="text-gray-200 font-light cursor-pointer hover:text-white hover:scale-[1.04] transition-all duration-150">
               <Link href={"/book"}>Booking</Link>
             </li>
-            <li className="text-gray-200 font-light cursor-pointer hover:text-white">
+            <li className="text-gray-200 font-light cursor-pointer hover:text-white hover:scale-[1.04] transition-all duration-150">
               Reviews
             </li>
-            <li className="text-gray-200 font-light cursor-pointer hover:text-white">
-              <button className="bg-green-400 p-2 rounded-3xl hover:scale-[1.02] transition-all duration-150">
+            <li className="text-gray-200 font-light cursor-pointer hover:text-white hover:scale-[1.04] transition-all duration-150">
+              <button className="w-[130px] link text-white hover:scale-[1.04] transition-all duration-150">
                 Join Now
               </button>
             </li>
           </ul>
+          <button className="block lg:hidden w-[130px] link text-white hover:scale-[1.02] transition-all duration-150">
+            Join Now
+          </button>
         </div>
       </header>
     </div>
