@@ -39,7 +39,7 @@ const Navbar = () => {
           className={` nav z-[99999] w-full lg:w-[70%] p-3 fixed top-0 lg:left-[15%]  bg-gray-300 bg-opacity-25  lg:rounded-b-2xl mx-auto flex justify-around px-1`}
         >
           <div className="flex items-center gap-3 z-[999]  w-[100%] lg:w-[auto] justify-start">
-            <span className="block lg:hidden" onClick={menuBtnHandler}>
+            <span className="block lg:hidden px-2" onClick={menuBtnHandler}>
               <MenuIcon className="text-white" />
             </span>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
             >
               <Close
                 onClick={hideMenuHandler}
-                className="absolute top-3 right-5 text-white"
+                className="absolute top-3 right-5 text-white hover:rotate-180"
               />
               <ul className="flex absolute text-white w-full top-24 flex-col justify-center p-10">
                 <li className="py-2 border-b w-full pl-3 hover:bg-gray-100 cursor-pointer hover:text-blue-500">
